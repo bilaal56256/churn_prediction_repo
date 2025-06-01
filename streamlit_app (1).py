@@ -1,16 +1,12 @@
 
 import gzip
 import json
-
-import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
 import streamlit as st
 # Model, and Collumns
-model = joblib.load("churn_model.pkl")
-columns = joblib.load("churn_columns.pkl")
 
 st.title("☎️ Telco Churn Customers Prediction App")
 st.write("Enter customer information below to get Churn Prediction.")
